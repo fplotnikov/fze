@@ -1,12 +1,12 @@
 # Install ansible requirements with ansible galaxy
 
-# Install roles
+## Install roles
 ansible-galaxy role install -r requirements.yml
-# Install collections
+## Install collections
 ansible-galaxy collection install -r requirements.yml
 
 
-# Playbooks descriptions
+## Playbooks descriptions
 
 * host-vpn.yml  - playbook to setup openvpn server
 * host-zabbix.yml - playbook to install zabbix agent on server and register on Zabbix server
