@@ -1,0 +1,20 @@
+- hosts: vpn
+  gather_facts: true
+  become: true
+  collections:
+    - community.zabbix
+  vars:
+    zabbix_agent_server: "{{ zabbix_server }}"
+    zabbix_agent_serveractive: "{{ zabbix_server }}"
+    zabbix_url: "https://{{ zabbix_server }}"
+    zabbix_api_use: true # use zabbix_api_create_hosts and/or zabbix_api_create_hostgroup from 0.8.0
+    zabbix_api_user: "{{ zabbix_api_user }}"
+    zabbix_api_pass: "{{ zabbix_api_pass }}"
+    zabbix_create_host: present
+    zabbix_host_groups:
+      - "{{ zabbix_host_groups }}"
+    zabbix_link_templates:
+      - "{{ zabbix_link_templates }}"
+  roles:
+    - zabbix_agent
+

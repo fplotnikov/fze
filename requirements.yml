@@ -1,0 +1,16 @@
+---
+roles: 
+  # openvpn role
+  - src: https://github.com/Stouts/Stouts.openvpn.git
+    version: develop
+    name: stouts.openvpn
+  # easy-rsa roles
+  - src: https://github.com/nkakouros-original/ansible-role-easyrsa.git
+    version: master
+    name: nkakouros.easyrsa
+  # masquerade roles
+  - src: abelboldu.ansible-masquerade
+
+collections:
+  - name: community.zabbix
+    version: v0.2.0
