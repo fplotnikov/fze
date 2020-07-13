@@ -29,10 +29,8 @@ openvpn_server_options: [
     'push "dhcp-option dns 8.8.8.8"'
 ]
 openvpn_dev: tun
-openvpn_clients_revoke: []
 openvpn_use_pam: no
 openvpn_unified_client_profiles: yes
-masquerade_source: '10.8.0.0/24'
 
 
 # zabbix part
