@@ -14,10 +14,11 @@
 
 # To setup server proceed with following procedure:
 1. Pull repo
-2. Prepare environment:
-    2.1 Add servers in hosts file
-    2.2 Prepare "vpn" file in group_vars folder
-3. Run ansible playbook and specify environment. Example: `ansible-playbook --private-key some_key.pem -u ubuntu -b -i environments/dev/hosts host-vpn.yml`
+2. Install ansible galaxy dependencies
+3. Prepare environment:
+    3.1 Add servers in hosts file
+    3.2 Prepare "vpn" file in group_vars folder
+4. Run ansible playbook and specify environment. Example: `ansible-playbook --private-key some_key.pem -u ubuntu -b -i environments/dev/hosts host-vpn.yml`
 
 Order in which you run setup is not important. 
 
